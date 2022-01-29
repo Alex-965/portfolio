@@ -259,7 +259,7 @@ body {
 }
 
 .active {
-  color: black;
+  color: black !important;
 }
 
 @media screen and (max-width: 1024px) {
