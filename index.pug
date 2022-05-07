@@ -9,39 +9,41 @@ html(lang="en")
     body 
         header.header 
             .container 
-                nav.user-navigation
+                .header_burger(id="button")
+                    span 
+                nav.header-list(id="list")
                     ul.list-items
                         li.list-item 
-                            a.list-link(href="#home" id="home-link") Домой
+                            a.list-link(href="#home" id="home-link") Початок
                         li.list-item 
-                            a.list-link(href="#about" id="about-link") О себе
+                            a.list-link(href="#about" id="about-link") Про себе
                         li.list-item 
-                            a.list-link(href="#skills" id="skills-link") Навычки
+                            a.list-link(href="#skills" id="skills-link") Hавики
                         li.list-item 
-                            a.list-link(href="#portfolio" id="portfolio-link") Портфолио
+                            a.list-link(href="#portfolio" id="portfolio-link") Портфоліо
                         li.list-item 
-                            a.list-link(href="#contacts" id="contacts-link") Контакты
+                            a.list-link(href="#contacts" id="contacts-link") Контакти
         main(id="home")
             .container      
                 section.inform
                     h1.title Саша <br> Кобзей
-                    h2.subtitle програмист  <br>
-                        |15 лет, Украина
-                    p.language(data-google-lang="ru" id="ru") RU | <span class="active-text" data-google-lang="en" id="eng"> ENG </span>
+                    h2.subtitle програміст  <br>
+                        |15 років, Україна
+                    p.language(data-google-lang="ua" id="ua") Укр | <span class="active-text" data-google-lang="en" id="eng"> ENG </span>
                     img(src="img/image-1" width="100%" height="400px")    
             section.about(id="about")
                 .container 
                     .about_row
-                        h3 О себе
-                        p Привет, я Сашa – програмист из Украины. <br>
-                                | Интересуюсь программированием и всем, что с этим связано.
-                        p Учусь на курсах программирования и <br> создания веб-страниц в ШКМ.
-                        p Готовы реализовывать отличные проекты <br> с замечательными людьми.
+                        h3 Про себе
+                        p Привіт, я Сашa – програміст з України. <br>
+                                | Інтересуюсь програмуванням та всім, що з цим пов'язано.
+                        p Вчусь на курсах програмування і <br> створення веб-сторінок в ШКМ.
+                        p Готові реалізувати клашні проекти <br> разом з прекрасними людьми.
             section.skills(id="skills")
                 .container 
                     .skills_row
-                        h3 Навычки
-                        p Я работаю с такими языками программирования как
+                        h3 Навики
+                        p Я працюю з такими мовами програмування як
                         ul.skill-list
                             li.skill-list-item
                                 img(src="img/image-2.png" width="90px" height="90px")
@@ -62,23 +64,34 @@ html(lang="en")
             section.portfolio(id="portfolio")
                 .container
                     .portfolio_row 
-                        h3 Портфолио
-                        ul.portfolio-list
+                        h3 Портфоліо
+                        ul.portfolio-list(id="first")
                             li.portfolio-list-item  
                                 img(src="img//image-8" width="100%")
-                                a(href="https://alex-965.github.io/yoga/") курсы йоги - scroll web-page
+                                a(href="https://alex-965.github.io/yoga/") курси йоги - scroll web-page
                             li.portfolio-list-item  
                                 img(src="img//image-9" width="100%")
-                                a(href="https://alex-965.github.io/flower/") интернет магазин цветов - scroll web-page
+                                a(href="https://alex-965.github.io/flower/") інтернет магазин квітів - scroll web-page
                             li.portfolio-list-item  
                                 img(src="img//image-15" width="100%")
                                 a(href="https://alex-965.github.io/Abojur/") Abojur - scroll web-page
+                        ul.portfolio-list(id="second")
+                            li.portfolio-list-item  
+                                img(src="img//image-6.png" width="100%")
+                                a(href="https://alex-965.github.io/yoga/") текст - scroll web-page
+                            li.portfolio-list-item  
+                                img(src="img//image-7.png" width="100%")
+                                a(href="https://alex-965.github.io/flower/") текст - scroll web-page
+                            li.portfolio-list-item  
+                                img(src="img//image-8.png" width="100%")
+                                a(href="https://alex-965.github.io/Abojur/") текст - scroll web-page
+                        a.show-more(id="more" href="#portfolio") Показати більше
         footer.footer(id="contacts")
             .container 
                 .footer_row 
-                    h3 Контакты 
-                    p Хотите узнать больше или просто поболтать? <br> Добро пожаловать! 
-                    a.button Отправить сообщение
+                    h3 Контакти 
+                    p Хочете дізнатсь більше або просто побалакати? <br> Ласкаво просимо! 
+                    a.button Відправити повідомлення
                 nav.footer-links 
                     ul.footer-items
                         li.footer-item 
@@ -93,7 +106,7 @@ html(lang="en")
                         li.footer-item
                             a(href="#") 
                             img(src="img/image-14" width="40px" height="40px")
-                p.text Я есть на  <br> LinkedIn, Instagram, Behance, Dribble
+                p.text Я є на  <br> LinkedIn, Instagram, Behance, Dribble
                 script(src="js/main.js" type="text/javascript")
                 script(src="js/some.js" type="text/javascript")
                 script(src="js/google-translate.js" type="text/javascript")
