@@ -259,10 +259,6 @@ body {
   cursor: pointer;
 }
 
-.active {
-  color: black !important;
-}
-
 .portfolio-list.active {
   display: none;
 }
