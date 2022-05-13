@@ -39,7 +39,7 @@ header {
   color: #828282;
 }
 
-.list-items .list-item a:hover {
+.list-items .list-item a.active, .list-items .list-item a:hover {
   color: black;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -58,6 +58,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 550px;
+  padding: 100px 0px;
 }
 
 .inform img {
@@ -81,13 +82,9 @@ header {
   margin-right: 20px;
 }
 
-main {
-  padding-top: 100px;
-}
-
 .about {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 200px;
   background: #F6F6F6;
   padding: 100px;
 }
@@ -469,5 +466,13 @@ body {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
+}
+
+.uk.language__img_active {
+  color: black;
+}
+
+.en.language__img_active {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

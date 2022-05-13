@@ -46,6 +46,7 @@ header {
             text-decoration: none;
             color: $someColor;
 
+            &.active,
             &:hover {
                 color: $mainColor;
                 transition: 0.3s;
@@ -60,6 +61,7 @@ header {
     align-items: flex-end;
     flex-wrap: wrap;
     height: 550px;
+    padding: 100px 0px;
 
     img {
         margin-top: 30px;
@@ -80,13 +82,10 @@ header {
     margin-right: 20px;
 }
 
-main {
-    padding-top: 100px;
-}
 
 .about {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
     background: $bgColor;
     padding: 100px;
 }
@@ -430,3 +429,11 @@ body {
         }
     }
 }
+.uk.language__img_active{
+    color: black;
+}
+
+.en.language__img_active{
+    color: black;
+}
+

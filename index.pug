@@ -11,12 +11,13 @@ html(lang="uk")
     body
         header.header
             .container
+                
                 .header_burger(id="button")
                     span
                 nav.header-list(id="list")
                     ul.list-items
                         li.list-item
-                            a.list-link(href="#home" id="home-link") Початок
+                            a.list-link(href="#home" id="home-link" class="active") Початок
                         li.list-item
                             a.list-link(href="#about" id="about-link") Про себе
                         li.list-item
@@ -25,16 +26,16 @@ html(lang="uk")
                             a.list-link(href="#portfolio" id="portfolio-link") Портфоліо
                         li.list-item
                             a.list-link(href="#contacts" id="contacts-link") Контакти
-        main(id="home")
+        main
             .container
-                section.inform
+                section.inform(id="home")
                     h1.title Саша <br> Кобзей
                     h2.subtitle програміст  <br>
                         |15 років, Україна
                     p.language
-                        span(data-google-lang="uk" alt="uk" id="uk") УКР
+                        span(data-google-lang="uk" alt="uk" id="uk" class="uk") УКР
                         i  | 
-                        span(data-google-lang="en" alt="en" id="en") ENG
+                        span(data-google-lang="en" alt="en" id="en" class="en") ENG
                     img(src="img/image-1" width="100%" height="400px")
             section.about(id="about")
                 .container
@@ -51,19 +52,19 @@ html(lang="uk")
                         p Я працюю з такими мовами програмування як
                         ul.skill-list
                             li.skill-list-item
-                                img(src="img/image-2.png" width="90px" height="90px")
+                                img(src="img/image-html.webp"  height="90px")
                                 p html
                                 img(src="img/image-6", alt="")
                             li.skill-list-item
-                                img(src="img/image-3.png" width="90px" height="90px")
+                                img(src="img/image-3.png"  height="90px")
                                 p pug
                                 img(src="img/image-7", alt="")
                             li.skill-list-item
-                                img(src="img/image-4.png" width="120px" height="90px")
+                                img(src="img/image-4.png"  height="90px")
                                 p scss
                                 img(src="img/image-6", alt="")
                             li.skill-list-item
-                                img(src="img/image-5.png" width="70px" height="90px")
+                                img(src="img/image-css.png"  height="90px")
                                 p css
                                 img(src="img/image-6", alt="")
             section.portfolio(id="portfolio")
