@@ -11,7 +11,6 @@ html(lang="uk")
     body
         header.header
             .container
-                
                 .header_burger(id="button")
                     span
                 nav.header-list(id="list")
@@ -36,7 +35,7 @@ html(lang="uk")
                         span(data-google-lang="uk" alt="uk" id="uk" class="uk") УКР
                         i  | 
                         span(data-google-lang="en" alt="en" id="en" class="en") ENG
-                    img(src="img/image-1" width="100%" height="400px")
+                    img(src="img/image-1" width="100%" height="400px" id="img")
             section.about(id="about")
                 .container
                     .about_row
@@ -92,27 +91,32 @@ html(lang="uk")
                                 img(src="img//image-8.png" width="100%")
                                 a(href="https://alex-965.github.io/Abojur/") текст - scroll web-page
                         a.show-more(id="more" href="#portfolio") Показати більше
-        footer.footer(id="contacts")
+        section.footer(id="contacts")
             .container
                 .footer_row
                     h3 Контакти
                     p Хочете дізнатсь більше або просто побалакати? <br> Ласкаво просимо!
-                    a.button Відправити повідомлення
+
+                .footer-inputs
+                    input(type="text" placeholder="Імя" class="name")
+                    input(type="text" placeholder="Прізвище" class="second-name")
+                    textarea(type="text" placeholder="Ваші запитання" class=" questions")
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41954.996376164745!2d24.68210968641801!3d48.91182415909102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c16c34b0381d%3A0xd6d32394e59e41c2!2z0IbQstCw0L3Qvi3QpNGA0LDQvdC60ZbQstGB0YzQuiwg0IbQstCw0L3Qvi3QpNGA0LDQvdC60ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3NjAwMA!5e0!3m2!1suk!2sua!4v1654936498037!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 nav.footer-links
                     ul.footer-items
                         li.footer-item
                             a(href="#")
-                            img(src="img/image-11" width="40px" height="40px")
+                            img(src="img/instagram.png" width="40px" height="40px")
                         li.footer-item
                             a(href="#")
-                            img(src="img/image-12" width="40px" height="40px")
+                            img(src="img/telegram.png" width="40px" height="40px")
                         li.footer-item
                             a(href="#")
-                            img(src="img/image-13" width="40px" height="40px") 
+                            img(src="img/discord.png" width="40px" height="40px") 
                         li.footer-item
                             a(href="#")
-                            img(src="img/image-14" width="40px" height="40px")
-                p.text Я є на  <br> LinkedIn, Instagram, Behance, Dribble
+                            img(src="img/youtube.png" width="40px" height="40px")
+                p.text Я є в  <br> Instagram, Telegram, Discord, YouTube
 
         script(src="js/main.js" type="text/javascript")
         script(src="js/some.js" type="text/javascript")
